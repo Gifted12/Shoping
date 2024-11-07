@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    
+    <link rel="icon" href="images/kindpng_316070.png" type="image/x-icon">
+    <title>VOLGA</title>
+</head>
+<body>
+    <main>
+                <!-- -------------This is the code for the modal------  -->
+                <div  class="modaloutside ">
+                    <div class="modalinner-1 modalanimation">
+                        <form  action="#">
+                            
+                              <div class="logindivs">
+                                <p class="signin-p signin-color ">Sign in</p>
+                                <p class="signup-p" onclick="signupclick ()">Sign up</p>
+                              </div>
+                            <div class="signinform">
+                              <div class="container">
+                                <label style="color:rgb(70, 62, 48);" for="uname"><b>Username</b></label>
+                                <input class="inputs" type="text" placeholder="Enter Username" name="uname" required>
+                            
+                                <label style="color:rgb(70, 62, 48);" for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                                <button class="loginbtn" type="submit">Login</button>
+                                <label>
+                                  <input  type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                              </div>
+                            
+                              <div class="container cancel-container" >
+                                <button type="button" class="cancelbtn" onclick="cancel()">Cancel</button>
+                                <span class="psw"><a href="#">forgoten password?</a></span>
+                              </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modalinner-2 modalanimation" >
+                        <form  action="#">
+                            
+                              <div class="logindivs">
+                                <p class="signin-p" onclick="signinclick ()">Sign in </p>
+                                <p class="signup-p signup-color" >Sign up</p>
+                              </div>
+                            <div class="signinform">
+                              <div class="container">
+                                <label style="color:rgb(70, 62, 48);" for="email"><b>Email</b></label>
+                                <input class="inputs" type="email" placeholder="Email" name="email" required>
+                            
+                                <label style="color:rgb(70, 62, 48);" for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                
+                                <label style="color:rgb(70, 62, 48);" for="psw"><b>Repeat Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                <button class="loginbtn" type="submit">Create Account</button>
+
+                              </div>
+                            
+                              <div class="container cancel-container" >
+                                <button type="button" class="cancelbtn" onclick="cancel()">Cancel</button>
+                                <span class="terms" >By creating an account you agree to our <a class="psw" href="#">Terms & Conditions</a></span>
+                              </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        
+        
+        
+                <!-- -------------This is the code for the modal------  -->
+        <div class="topsection">
+            <div class="moneysec">
+                <p class="curr">currency</p> 
+                <select name="money" id="mon" class="monn">
+                    <option value="usd">USD</option>
+                    <option value="dollas">dollas</option>
+                    <option value="naira">naira</option>
+                </select>
+                <hr class="firsthr">
+                <p class="lang">languages</p>
+                <select name="lang" id="lan" class="lann">
+                    <option value="en">EN</option>
+                    <option value="french">french</option>
+                    <option value="spanish">spanish</option>
+                </select>
+            </div>
+            <div class="accountsec">
+                <p><a href="#" id="anchorid" class="anchor1" onclick="signinclick ()" >Sign in</a></p>
+                <hr class="firsthr">
+                <p><a href="#" id="anchorid" class="anchor2" onclick="signupclick ()">Sign up</a></p>
+
+            </div>
+        
+            
+        </div>
+            <hr class="divhr">
+        <div class="volgamain">
+             <div class="volga1">
+                <h1>VOLGA.</h1>
+             </div>
+             <div class="volga2">
+                <select name="categories" id="allcat" class="allcatt">
+                    <option class="searchoption" value="all">All Categories</option>
+                    <option class="searchoption" value="Phone_tab">Phone & Tablets</option>
+                    <option class="searchoption" value="TV_Video">TV & Video</option>
+                    <option class="searchoption" value="Electronics">Electronics</option>
+                    <option class="searchoption" value="Computer_Laptop">Computer & Laptop</option>
+                    <option class="searchoption" value="Fashion">Fashion</option>
+                    <option class="searchoption" value="Home_Kitchen">Home & Kitchen</option>
+                    <option class="searchoption" value="Beauty">Beauty</option>
+                    <option class="searchoption" value="Sport_Tourisim">Sport & Tourisim</option>
+                    <option class="searchoption" value="Meat_Seafood">Meat & Seafood</option>
+                    <option class="searchoption" value="Fruits & Veggies">Fruits & Veggies</option>
+                </select>
+                <hr class="searchhr">
+                <input type="search" name="srch" id="srch" class="searchh" autocomplete="on" placeholder="Search here...">
+               <button name="srch" class="srchbtn">🔍</button>
+             </div>
+             <div class="volga3">
+                <p class="heart">❤</p>
+                <hr class="volga3hr">
+                <img class="bag" src="./images/icons/icon-cart.svg" alt="">
+                <div></div>
+             </div>
+
+        </div>
+        <div  class="navdiv">
+            <nav>
+                <ul class="topul">
+                    <a href="#" class="topli-a"> <li class="topli">HOME</li></a>
+                    <a href="#" class="topli-a"> <li class="topli">SHOP</li></a>
+                    <a href="#" class="topli-a"> <li class="topli">PAGE</li></a>
+                    <a href="#" class="topli-a"> <li class="topli">BLOGS</li></a>
+                    <a href="#" class="topli-a"> <li class="topli">ABOUT US</li></a>
+                    <a href="#" class="topli-a"> <li class="topli">CONTACT US</li></a>
+                </ul>
+            </nav>
+            <div class="hotlinediv">
+                <img class="hotlinephone" src="./images/icons/icon-phone0.svg" alt="" srcset="">
+                <p class="hot">Hotline: +234 813-187-6656</p>
+            </div>
+        </div>
+
+
+        <div class="firstsection">
+            <div class="catdiv">
+                <div class="buggerdiv">
+                <p class="cat-a1">CATEGORIES</p>                    
+                </div>
+                <a href="#" class="cat-a"> Phones & Tablets</a>
+                <a href="#" class="cat-a">TV & Video</a>
+                <a href="#" class="cat-a"> Electronics</a>
+                <a href="#" class="cat-a">Computer & Laptop</a>
+                <a href="#" class="cat-a">Fashion</a>
+                <a href="#" class="cat-a">Home & Kitchen</a>
+                <a href="#" class="cat-a">Beauty</a>
+                <a href="#" class="cat-a">Sport & Tourisim</a>
+                <a href="#" class="cat-a">Meat & Seafood</a>
+                <a href="#" class="cat-a">Fruits & Veggies</a>
+                <a href="#" class="cat-a">More Categories</a>
+            </div>
+            <div class="bigsale">
+                <div class="bigsaleslide">
+                    <img class="bigsaleimg" src="./images/istockphoto-1214369401-1024x1024.jpg" alt="">
+                    <p class="bigsale-p"><span class="big">big sale</span>  <br> <span class="off">up to 50% off </span> <br> <span class="all">all selected items</span> </p>
+                    <button class="shopnow">SHOP NOW</button>
+                </div>
+
+                <div class="bigsaleslide">
+                    <img  class="bigsaleimg" src="./images/istockphoto-1347685599-1024x1024.jpg" alt="">
+                    <p class="bigsale-p"><span class="big">big sale2</span>  <br> <span class="off">up to 50% off </span> <br> <span class="all">all selected items</span> </p>
+                    <button class="shopnow">SHOP NOW</button>
+                </div>
+
+                <div class="bigsaleslide">
+                    <img  class="bigsaleimg" src="./images/istockphoto-1273200128-1024x1024.jpg" alt="">
+                    <p class="bigsale-p"><span class="big">big sale4</span>  <br> <span class="off">up to 50% off </span> <br> <span class="all">all selected items</span> </p>
+                    <button class="shopnow">SHOP NOW</button>
+                </div>
+
+                <div class="bigsaleslide">
+                    <img  class="bigsaleimg" src="./images/istockphoto-1214369401-1024x1024.jpg" alt="">
+                    <p class="bigsale-p"><span class="big">big sale5</span>  <br> <span class="off">up to 50% off </span> <br> <span class="all">all selected items</span> </p>
+                    <button class="shopnow">SHOP NOW</button>
+                </div>
+        
+            </div>
+
+
+
+            <div class="portablediv">
+
+                <div class="speaker"> <p class="speaker-p">portable <br>speaker </p> <button  class="buynow">BUY NOW</button></div>
+                <div class="asus"> <p class="asus-p"> ASUS taichi <br> <span class="under">under $350</span></p> <button class="buynow">BUY NOW</button></div>
+                <div class="led"> <p class="led-p">3D LED <br>smart TV</p> <button class="buynow">BUY NOW</button></div>
+                
+            </div>
+        </div>
+        <div class="brandscover">
+            <div class="topbrands">
+                <ul class="brandul">
+                    <a href="#" class="brandli1">TOP BRANDS</li></a>
+                    <a href="#" class="brandli2">FASHION BRANDS</li></a>
+                    <a href="#" class="brandli3">ELECTRONICS BRANDS</li></a>
+                </ul>
+                <div class="arrowsdiv">
+                    <p  class="arrows"> < </p>
+                    <p class="arrows"> > </p>
+                </div>
+            </div>
+            <hr class="companyhr">
+            <div class="companysdiv">
+                <img class="companys" src="images/icons/logo-hp.png" alt="">
+                <img class="companys" src="images/icons/logo-google.png" alt="">
+                <img class="companys" src="images/icons/logo-ibm.png" alt="">
+                <img class="companys" src="images/icons/logo-vector-graphics.png" alt="">
+                <img class="companys" src="images/icons/logo-microsoft.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="hotdealsection">
+            <div  class="hotdealdiv"><p class="hotdeal">HOT DEAL</p></div>
+            <div  class="hotdealsub">
+                <div class="day1"><p class="day1a" id="days" >000</p> <p class="day1b">Days</p></div>
+                <P class="dots">:</P>
+                
+                <div class="day2"> <p class="day2a" id="days" >0</p> </div>
+                <P class="dots">:</P>
+                <div class="day3"> <p class="day3a" id="days" >0</p> </div>
+                <P class="dots">:</P>
+                <div class="day4"> <p class="day4a" id="days" >0</p> </div>
+            </div>
+        </div>
+
+        <div class="bestoffermain">
+            <a href="#"  class="bestoffer-a"><div class="bestofferdiv"> 
+                <p class="bestoffer-p"><span class="bestoffer">BEST OFFER <br> EVER</span> <br>  </span> <br></p> 
+                <div class="supersalediv">
+                    <p class="super">SUPER <br><span class="sale">SALE</span></p>
+                </div>
+                <p class="upto">UP TO </p>
+                <p class="percent"><span class="three">30 </span> <span class="superscript"><sup class="supp">%</sup> <sub class="subb">OFF</sub></span></p>
+            
+            </div></a>
+            <div class="samsungdiv">
+                <div class="btns">
+                    <button class="newbtn1a">NEW</button>
+                    <button class="newbtn1b">-15%</button>
+                </div>
+                <img class="phoneimg" src="images/kindpng_2460267.png" alt="">
+                <div>
+                    <p>REDMI NOTE 7</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>$79.99</p>
+                    <p>$59.99</p>
+                    
+                </div>
+            </div>
+
+            <div class="addtocartdiv">
+                <img class="tvimg" src="images/kindpng_7832259.png" alt="">
+                <div class="cartbtn">
+                    <button class="add">ADD TO CART</button>
+                    <button  class="heart2">❤</button>
+                    <div><button class="equal">=</button></div>
+                </div>
+
+            </div>
+
+            <div class="freshdiv">  
+                <img class="laptop2" src="images/kindpng_688636.png" alt="">
+                <div class="freshatlantic">
+                    <p>fresh atlantic cod</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>$59.99</p>
+                </div>
+            </div>
+
+            <div class="vr">
+                <img class="vrimg" src="images/kindpng_316070.png" alt="">
+                <div class="freshatlantic">
+                    <p>vertual reality</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>$59.99</p> 
+                </div>
+            </div>
+        </div>
+
+        <div class="argumenteddiv">
+            <div class="vertual-r"> <u>vertual reality</u></div>
+            <div class="vraar"> vertual reality and <br><span class="ar">argumented reality </span> </div>
+            <div class="vertual-r-img"> <img class="superstoreimg" src="images/kindpng_2167521.png" alt=""></div>
+        </div>
+            <!-- //////////////////////section /////-->
+        <section class="section1">
+            <div class="subsection1a orange-bordertop ">
+                <div class="fonandtabletdiv orange-background">
+                    <p><span class="fon  fon-background"> 📱</span> <span class="phoneandtab">phones & Tablets</span></p>   
+                </div>
+                <div class="topbrands1">
+                    <ul class="brandul1">
+                        <a href="#" class="brandli1a">smart phones</li></a>
+                        <a href="#" class="brandli2a">mobile accessories</li></a>
+                        <a href="#" class="brandli3a">Tablets</li></a>
+                        <a href="#" class="brandli3a">see more</li></a>
+                    </ul>
+                    <div class="arrowsdiv">
+                        <p  class="arrows"> < </p>
+                        <p class="arrows"> > </p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection1b">
+        
+                <div class="m5div">
+                    <div class="mi5textsdiv ">
+                        <h2 class="mii">Mi <span class="five-5">5</span></h2>
+                        <p class="mi5flash">Flash as light.</p>
+                        <p class="mi5price"><sup class="mi5sup">$</sup>24.99</p>
+                        <button class="shopbtn1">SHOP NOW</button>
+                    </div>
+
+                </div>
+                    
+                <div class="addtocartdiv1a">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+                <div class="addtocartdiv1b">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+                <div class="addtocartdiv1c">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+                <div class="addtocartdiv1d">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+            </div>     
+           
+        </section>
+<!-- //////////////////////////////// -->
+        <section class="section1  ">
+            <div class="subsection1a green-bordertop  ">
+                <div class="fonandtabletdiv green-background">
+                    <p><span class="fon  tv-background"> 📱</span> <span class="phoneandtab">tv & video</span></p>   
+                </div>
+                <div class="topbrands1">
+                    <ul class="brandul1">
+                        <a href="#" class="brandli1a">smart phones</li></a>
+                        <a href="#" class="brandli2a">mobile accessories</li></a>
+                        <a href="#" class="brandli3a">Tablets</li></a>
+                        <a href="#" class="brandli3a">see more</li></a>
+                    </ul>
+                    <div class="arrowsdiv">
+                        <p  class="arrows"> < </p>
+                        <p class="arrows"> > </p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection1b">
+        
+                <div class="smarttvmaindiv">
+                    <div class="smarttvdiv">
+                        <h5 class="newseries">GET THE NEW SERIES OF</h5>
+                        <h2 class="ledsmarttv">3D LED SMART TV</h2>
+                        <hr class="tvhr">
+                        <img class="smarttv2img" src="./images/kindpng_7832259.png" alt="">
+                    </div>
+
+                </div>
+                    
+                <div class="addtocartdiv1a">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+                <div class="addtocartdiv1b">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+                <div class="addtocartdiv1c">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+                <div class="addtocartdiv1d">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+            </div>     
+           
+        </section>
+        <!-- /////////////////////////// -->
+        <section class="section1">
+            <div class="subsection1a pink-bordertop">
+                <div class="fonandtabletdiv pink-background">
+                    <p><span class="fon  fashion-background"> 📱</span> <span class="phoneandtab">fashion</span></p>   
+                </div>
+                <div class="topbrands1">
+                    <ul class="brandul1">
+                        <a href="#" class="brandli1a">smart phones</li></a>
+                        <a href="#" class="brandli2a">mobile accessories</li></a>
+                        <a href="#" class="brandli3a">Tablets</li></a>
+                        <a href="#" class="brandli3a">see more</li></a>
+                    </ul>
+                    <div class="arrowsdiv">
+                        <p  class="arrows"> < </p>
+                        <p class="arrows"> > </p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection1b">
+        
+                <div class="m5div">
+                    <div class="summersalediv">
+                        <h5 class="endof">END OF</h5>
+                        <h2 class="summersale">SUMMER <br> SALE</h2>
+                        <div class="sixtypercentoffdiv">
+                            <p class="sixtypercentoff">60 <br><span class="sixtypercent">%</span><span class="sixtyoff sixtypercent">oFF</span></p>
+                        </div>
+                        
+                    </div>
+                
+                </div>
+                    
+                <div class="addtocartdiv1a">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+                <div class="addtocartdiv1b">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+                <div class="addtocartdiv1c">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+                <div class="addtocartdiv1d">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+            </div>     
+           
+        </section>
+        <!-- ///////////////////////////////////// -->
+        <section class="section1">
+            <div class="subsection1a blue-bordertop">
+                <div class="fonandtabletdiv blue-background">
+                    <p><span class="fon  elect-background"> 📱</span> <span class="phoneandtab">electronics</span></p>   
+                </div>
+                <div class="topbrands1">
+                    <ul class="brandul1">
+                        <a href="#" class="brandli1a">smart phones</li></a>
+                        <a href="#" class="brandli2a">mobile accessories</li></a>
+                        <a href="#" class="brandli3a">Tablets</li></a>
+                        <a href="#" class="brandli3a">see more</li></a>
+                    </ul>
+                    <div class="arrowsdiv">
+                        <p  class="arrows"> < </p>
+                        <p class="arrows"> > </p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection1b">
+        
+                <div class="electronicsdiv">
+                    <div class="electronicspercent-maindiv">
+                        <img class="electimg" src="images/kindpng_316070.png" alt="">
+                        <div class="electronicspercent-div">
+                            <p class="electronicspercent-p">UP TO 20% OFF</p>
+                        </div>
+                        <h3 class="electronicsbigsale">BIGEST SALE</h3>
+                        <a class="electshopnow" href="#">SHOP NOW</a>                        
+                    </div>
+
+                </div>
+                    
+                <div class="addtocartdiv1a">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+                <div class="addtocartdiv1b">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+                <div class="addtocartdiv1c">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+                <div class="addtocartdiv1d">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+            </div>     
+           
+        </section>
+        <!-- ///////////////////////// -->
+        <section class="section1">
+            <div class="subsection1a blue2-bordertop">
+                <div class="fonandtabletdiv blue2-background">
+                    <p><span class="fon home-background "> 📱</span> <span class="phoneandtab">home & kitchen</span></p>   
+                </div>
+                <div class="topbrands1">
+                    <ul class="brandul1">
+                        <a href="#" class="brandli1a">smart phones</li></a>
+                        <a href="#" class="brandli2a">mobile accessories</li></a>
+                        <a href="#" class="brandli3a">Tablets</li></a>
+                        <a href="#" class="brandli3a">see more</li></a>
+                    </ul>
+                    <div class="arrowsdiv">
+                        <p  class="arrows"> < </p>
+                        <p class="arrows"> > </p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection1b">
+        
+                <div class="homeandkitchenmain">
+                    <div class="homeandkitchendiv">
+                        <h5>COOKWARE SETS</h5>
+                        <h2>SALE OF 50%</h2>
+                        <button class="shopbtn1">SHOP NOW</button>
+                        <img class="kitchenimg" src="images/kindpng_316070.png" alt="img">
+                    </div>
+
+                </div>
+                    
+                <div class="addtocartdiv1a">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+                <div class="addtocartdiv1b">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+                <div class="addtocartdiv1c">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+                <div class="addtocartdiv1d">
+                    <img class="phoneimg1a" src="images/kindpng_2460267.png" alt="phone">
+                    <div class="cartbtn2">
+                        <button class="add">ADD TO CART</button>
+                        <button  class="heart2">❤</button>
+                        <div><button class="equal">=</button></div>
+                    </div>
+                </div>
+            </div>     
+           
+        </section>
+<!-- ///////// -->
+        <div class="newproductdiv">
+            <div class="newproductsub">
+                <div class="newproductsub1">
+                    <p><span class="product-tag "> 📱</span> <span class="newproduct">NEW PRODUCTS</span></p>
+                    <div class="arrowsdiv">
+                        <p  class="arrows"> < </p>
+                        <p class="arrows"> > </p>
+                    </div>
+                </div>
+                <div class="vrbox2">
+                    <p class="box2p">VR BOX 2 <br> Gamepads androids T3</p>
+                </div>
+                <div class="vrbox2content">
+                    
+                    <div class="vrbox2subcontent" >
+                        <div class="vrbox2tex">
+                        <p>vertual reality</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p>$59.99</p>                             
+                        </div>
+
+
+                        <div>
+                            <img class="vr2img" src="images/kindpng_316070.png" alt="">
+                        </div>
+                    </div>
+                    <div class="vrbox2subcontent " >
+                        <div class="vrbox2tex">
+                        <p>vertual reality</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p>$59.99</p>                            
+                        </div>
+ 
+
+                        <div>
+                            <img class="vr2img" src="images/kindpng_316070.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- ////// -->
+                <div class="newproductsub">
+                    <div class="newproductsub1">
+                        <p><span class="product-tag "> 📱</span> <span class="newproduct">BEST SELLERS</span></p>
+                        <div class="arrowsdiv">
+                            <p  class="arrows"> < </p>
+                            <p class="arrows"> > </p>
+                        </div>
+                    </div>
+                    <div class="vrbox2">
+                        <p class="box2p">SHOOT BIG <br> TRAVEL LIGHT</p>
+                    </div>
+                    <div class="vrbox2content">
+                        
+                        <div class="vrbox2subcontent" >
+                            <div class="vrbox2tex">
+                            <p>vertual reality</p>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>$59.99</p>                             
+                            </div>
+    
+    
+                            <div>
+                                <img class="vr2img" src="images/kindpng_316070.png" alt="">
+                            </div>
+                        </div>
+                        <div class="vrbox2subcontent " >
+                            <div class="vrbox2tex">
+                            <p>vertual reality</p>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>$59.99</p>                            
+                            </div>
+     
+    
+                            <div>
+                                <img class="vr2img" src="images/kindpng_316070.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+        </div>
+        <!-- //////////// -->
+       <div class="contactdiv">
+            <div class="contactsub">
+                <img class="callimg" src="./images/phone_telephone_cell_call_communication_icon.png" alt="">
+                <div class="daysdiv">
+                    <div class="days1" >
+                    <p class="mon-fri">Mon - Fri</p>
+                    <hr class="dayhr">
+                    <p class="mon-fri">8:00 - 18:00</p>                        
+                    </div>
+                    <div class="days1">
+                        <p class="mon-fri2">workingdays</p>
+                        <hr class="hourshr">
+                        <p class="mon-fri2">hours</p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <div class="contactsub">
+                <img class="callimg" src="./images/icons/icon-phone.svg" alt="">
+                <div class="daysdiv">
+                    <div class="days1" >
+                    <p class="mon-fri">+234 813-187-6656</p>                
+                    </div>
+                    <div class="days1">
+                        <p class="mon-fri2">Free support line!</p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <div class="contactsub">
+                <img class="callimg" src="./images/icons/icon-email.svg" alt="">
+                <div class="daysdiv">
+                    <div class="days1" >
+                    <p class="mon-fri"><a href="josiahyisa4reals@gmail.com">josiahyisa4reals@gmail.com</a></p>                      
+                    </div>
+                    <div class="days1">
+                        <p class="mon-fri2">Orders Support!</p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+       </div>
+
+       <div class="newslettersmain">
+            <div class="newslettersdiv">
+                <h2 class="newsh3">SIGN UP FOR NEWSLETTERS</h2>
+                <p class="newsletters-p">Be The First To Know, Sign up for newsletter today</p>
+            </div>
+            <form action="#" class="subscribediv">
+                <input id="subscribe" type="email" placeholder="Enter Your Email Address">
+                <button class="subscribesubmit" type="submit"> SUBSCRIBE</button>
+            </form>
+
+       </div>
+
+       <div class="customerservicemain">
+            <div>
+                <ul class="customer-ul">
+                    <h4>CUSTOMERS SERVICE</h4>
+                <li class="customer-li"><a class="customer-a" href="#">>  Contact Us </a></li>
+                <li class="customer-li"><a class="customer-a" href="#">>  Returns </a></li> 
+                <li class="customer-li"><a class="customer-a" href="#">>  Order History </a></li> 
+                <li class="customer-li"><a class="customer-a" href="#">>  Site Map </a></li> 
+                <li class="customer-li"><a class="customer-a" href="#">>  Testimonials </a></li> 
+                <li class="customer-li"><a class="customer-a" href="#">>  My Account </a></li>  
+                </ul>
+            </div>
+            <div>
+                <ul class="customer-ul">
+                    <h4>INFORMATIONS</h4>
+                <li class="customer-li"><a class="customer-a" href="#">>  About Us </a></li>
+                <li class="customer-li"><a class="customer-a" href="#">>  Delivery Information </a></li> 
+                <li class="customer-li"><a class="customer-a" href="#">>  Privacy Policy </a></li> 
+                <li class="customer-li"><a class="customer-a" href="#">>  Terms & Conditions </a></li> 
+                <li class="customer-li"><a class="customer-a" href="#">>  Waranties </a></li> 
+                <li class="customer-li"><a class="customer-a" href="#">>  FAQ </a></li>  
+                </ul>
+            </div>
+            <div>
+                <ul class="customer-ul">
+                    <h4>EXTRAS</h4>
+                <li class="customer-li"><a class="customer-a" href="#">>  Brands </a></li>
+                <li class="customer-li"><a class="customer-a" href="#">>  Gift Vouchers </a></li> 
+                <li class="customer-li"><a class="customer-a" href="#">>  Affiliate </a></li> 
+                <li class="customer-li"><a class="customer-a" href="#">>  Wish List </a></li> 
+                <li class="customer-li"><a class="customer-a" href="#">>  Order History </a></li> 
+                <li class="customer-li"><a class="customer-a" href="#">>  Track Your Order </a></li>  
+                </ul>
+            </div>
+
+            <div class="volga4">
+                <h1 class="volga4-h1">VOLGA.</h1>
+                <p class="volga4-p">We are a team of designers and developer that creats high quality Magento, prestashop, opencart. </p>
+                
+            </div>
+       </div>
+       <p class="copyright"> copyright © 2023,JOSIAH YISA. All rights reserved </p>
+
+
+       <script src="src/index.js"></script>
+    </main>
+</body>
+</html>
